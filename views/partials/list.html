@@ -1,12 +1,7 @@
-<!-- Need to figure out why user_list is coming back as undefined -->
-
-<h1>${title}</h1>
-
-
 <form action="/create" method="POST">
     <div class="mb-3">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="list_content" value="list_content"></textarea>
-        <input type="hidden" value='${user_list}' name="user_name">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="list_content"></textarea>
+        <input type="hidden" value='${user_list}' name="user_list">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

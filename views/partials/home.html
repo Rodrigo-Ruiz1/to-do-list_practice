@@ -1,4 +1,16 @@
 <h1>${title}</h1>
+${!!is_logged_in ? ` 
+    <form action="/add" method="POST">
+        <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="list_content"></textarea>
+            <input type="hidden" name="user_list">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form> `
+    : 
+    `<h4>Log in or register to view your list!</h4>` }
+
+
 
 <ul>
     ${list.map(list => 

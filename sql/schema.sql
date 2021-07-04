@@ -8,7 +8,7 @@ CREATE TABLE users (
 
 CREATE TABLE list (
     id serial PRIMARY KEY,
-    status boolean NOT NULL,
+    status boolean default false,
     list_content varchar(2000),
     user_list integer REFERENCES users(id)
 );
